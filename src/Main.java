@@ -8,7 +8,7 @@ public class Main {
         HourSalary employee1 = new HourSalary("Bob", "Alishev", 18, "Backend dev", "Apple", 10);
         HourSalary employee2 = new HourSalary("John", "None", 28, "Frontend dev", "Google", 30);
         try {
-            FileWriter fileWriter = new FileWriter("file");
+            FileWriter fileWriter = new FileWriter("file", true);
             fileWriter.write(employee1.getName() + ": " + employee1.getSalary() + "\n");
             fileWriter.write(employee2.getName() + ": " + employee2.getSalary());
             System.out.println("Успешная запись!");
