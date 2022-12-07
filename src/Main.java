@@ -23,6 +23,7 @@ public class Main {
             while (scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
             }
+            fileReader.close();
         } catch (IOException exception) {
             System.out.println("Error");
         }
