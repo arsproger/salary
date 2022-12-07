@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         HourSalary employee1 = new HourSalary("Bob", "Alishev", 18, "Backend dev", "Apple", 10);
-        HourSalary employee2 = new HourSalary("John", "None", 28, "Frontend dev", "Google", 10);
+        HourSalary employee2 = new HourSalary("John", "None", 28, "Frontend dev", "Google", 30);
         try {
             FileWriter fileWriter = new FileWriter("file");
             fileWriter.write(employee1.getName() + ": " + employee1.getSalary() + "\n");
